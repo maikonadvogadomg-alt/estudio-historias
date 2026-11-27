@@ -1,0 +1,17 @@
+{
+  "titulo": "estudio-historias",
+  "arquivo": "hub.html",
+  "itens": [
+    {
+      "path": "index.html",
+      "nome": "Estúdio de Histórias",
+      "desc": "",
+      "on": true,
+      "icone": "icons/icon.svg"
+    }
+  ],
+  "sub": "",
+  "logo": "",
+  "tema": "escuro",
+  "links": []
+}

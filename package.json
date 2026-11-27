@@ -1,0 +1,51 @@
+{
+  "name": "estudio-historias",
+  "version": "1.0.0",
+  "description": "estudio-historias",
+  "author": "Maikon",
+  "private": true,
+  "main": "electron/main.cjs",
+  "portaDoPrograma": 7832,
+  "devDependencies": {
+    "electron": "33.2.1",
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "com.maikonadvogadomgalt.estudiohistorias.pc",
+    "productName": "estudio-historias",
+    "executableName": "estudio-historias",
+    "directories": {
+      "output": "release"
+    },
+    "asar": false,
+    "files": [
+      "**/*",
+      "!android/**",
+      "!.github/**",
+      "!release/**",
+      "!exe/**",
+      "!node_modules/.cache/**",
+      "!*.zip",
+      "!.sk/**",
+      "!apk.config.json"
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "icons/icon-512.png"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "estudio-historias",
+      "artifactName": "estudio-historias-Instalar.exe"
+    },
+    "portable": {
+      "artifactName": "estudio-historias-sem-instalar.exe"
+    }
+  }
+}
